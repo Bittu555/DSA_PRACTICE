@@ -38,7 +38,8 @@ object FileChannel extends Channel {
     val bytes: Array[Byte] = enc.encode(obj)
 
     // Using - Similar to try-with-resources in Java
-    Using(new FileOutputStream("/Users/samkeetjain/workspace/scala/Scala-Training/hello1.txt")) { os =>
+    Using(new FileOutputStream("/home/kumar/Desktop/DSA Traning/July17scala/hello.txt")) // to get address this type : pwd 
+{ os =>
       os.write(bytes)
       os.flush()
     }
